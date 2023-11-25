@@ -1,0 +1,32 @@
+@import "../styles/colors";
+@import "../styles/borders";
+
+nav {
+  margin: 5em 15em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: $inner_bevel_large_shadow;
+  border-radius: 1em;
+  background-color: $green_500;
+
+  .nav-away-from-home {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .nav-link {
+    all: unset;
+    border-radius: 0.5em;
+    box-shadow: $outer_bevel_small_shadow;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+    background-color: $white_100;
+  }
+  .nav-link:hover {
+    box-shadow: $inner_bevel_large_shadow;
+    color: $pink_500;
+  }
+}

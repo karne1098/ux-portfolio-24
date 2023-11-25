@@ -1,0 +1,29 @@
+@import "../styles/colors";
+@import "../styles/borders";
+
+.project-hook-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+
+  box-shadow: $outer_bevel_large_shadow;
+  border-radius: 1em;
+  background-color: $green_500;
+
+  .project-hook-goal,
+  .project-hook-role,
+  .project-hook-team,
+  .project-hook-duration,
+  .project-hook-final-prototype {
+    border-radius: 1em;
+    box-shadow: $inner_bevel_small_shadow;
+
+    padding: 1em;
+    margin: 0.5em;
+    overflow: hidden;
+
+    background-color: $white_100;
+  }
+}
