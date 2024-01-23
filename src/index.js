@@ -8,13 +8,17 @@ import "./index.scss";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useState } from "react";
 
 import Root from "./routes/root";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import LifespanBerdiProject from "./pages/projects/LifespanBerdiProject";
-import CbdsProject from "./pages/CbdsProject";
+import CbdsProject from "./pages/projects/CbdsProject";
+import BarderProject from "./pages/projects/BarderProject";
+import FoodSustainabilityProject from "./pages/projects/FoodSustainabilityProject";
+// const [mode, setMode] = useState("light-mode");
 
 const router = createBrowserRouter([
   {
@@ -31,11 +35,19 @@ const router = createBrowserRouter([
       },
       {
         path: "lifespan-berdi-project/",
-        element: <LifespanBerdiProject />,
+        element: <LifespanBerdiProject mode={"dark-mode"} />,
+      },
+      {
+        path: "barder-project/",
+        element: <BarderProject mode={"dark-mode"} />,
       },
       {
         path: "cbds-project/",
-        element: <CbdsProject />,
+        element: <CbdsProject mode={"dark-mode"} />,
+      },
+      {
+        path: "food-sustainability-project/",
+        element: <FoodSustainabilityProject mode={"dark-mode"} />,
       },
       {
         path: "about/",
@@ -47,6 +59,20 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    {/* <div className="mode-selection">
+      <button onClick={setMode("light-mode")}>Light</button>
+      <button onClick={setMode("dark-mode")}>Dark</button>
+      <button onClick={setMode("dark-mode")}>Beige</button>
+      <button onClick={setMode("fun-2008")}>Fun 2008</button>
+    </div> */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+function App() {
+  return (
+    <div className="App">
+      ...
+      <RouterProvider router={router} />
+    </div>
+  );
+}

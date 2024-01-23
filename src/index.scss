@@ -13,3 +13,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.dark-mode {
+  background-color: $dark-mode-black_900;
+  color: $dark-mode-white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  a {
+    color: rgb(185, 166, 255);
+  }
+  font-weight: 350;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.beige-mode {
+  background-color: rgb(238, 218, 197);
+  color: rgb(51, 35, 27);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fun-2008-mode {
+}

@@ -27,3 +27,24 @@
     background-color: $white_100;
   }
 }
+
+// .user-code-window-status {
+//   &--black {
+//     @extend .user-code-window-status;
+//     #learning-test-Code-Mirror {
+//       border: 1px solid $cbds-tkn-color__black;
+//     }
+//     p {
+//       color: $cbds-tkn-color__black;
+//     }
+//   }
+//   &--blue {
+//     @extend .user-code-window-status;
+//     #learning-test-Code-Mirror {
+//       border: 1px solid $cbds-tkn-color__blue;
+//     }
+//     p {
+//       color: $cbds-tkn-color__blue;
+//     }
+//   }
+// }
