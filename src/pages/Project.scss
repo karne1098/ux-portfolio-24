@@ -1,0 +1,16 @@
+@import "../styles/colors";
+@import "../styles/borders";
+
+#lifespanProjectCardHolder,
+#cbdsProjectCardHolder {
+  border-radius: 1em;
+  box-shadow: $outer_bevel_small_shadow;
+  padding: 1em 2em;
+}
+#lifespanProjectCardHolder:hover,
+#cbdsProjectCardHolder:hover {
+  border-radius: 1em;
+  box-shadow: $inner_bevel_small_shadow;
+  padding: 1em 2em;
+  background-color: $green_100;
+}

@@ -3,7 +3,7 @@
 @import "../styles/padding";
 
 main {
-  background-color: white;
+  // background-color: white;
   padding: 5em 15em;
 }
 
@@ -29,11 +29,22 @@ section {
   padding: 1em 2em;
 }
 
+.raised-content--large {
+  border-radius: 1em;
+  box-shadow: $outer_bevel_large_shadow;
+  padding: 1em 2em;
+}
+
 .lowered-content--small {
   border-radius: 1em;
   box-shadow: $inner_bevel_small_shadow;
   padding: 1em 2em;
   background-color: $green_100;
+}
+.lowered-content--large {
+  border-radius: 1em;
+  box-shadow: $inner_bevel_large_shadow;
+  padding: 1em 2em;
 }
 
 .content-grid {
@@ -71,7 +82,7 @@ section {
         width: 48%;
       }
       &--7 {
-        width: 54%;
+        width: 55%;
       }
       &--8 {
         width: 62%;
@@ -139,4 +150,15 @@ h3 {
 }
 .padding-top--48px {
   padding-top: 48px;
+}
+
+//
+.project {
+  background-color: $white_100;
+}
+.at-a-glance {
+  background-color: $green_100;
+}
+#at-a-glance-grid {
+  background-color: $white_100;
 }

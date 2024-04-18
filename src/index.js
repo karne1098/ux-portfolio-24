@@ -8,16 +8,16 @@ import "./index.scss";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 import Root from "./routes/root";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import LifespanBerdiProject from "./pages/projects/LifespanBerdiProject";
 import CbdsProject from "./pages/projects/CbdsProject";
-import BarderProject from "./pages/projects/BarderProject";
-import FoodSustainabilityProject from "./pages/projects/FoodSustainabilityProject";
+// import BarderProject from "./pages/projects/BarderProject";
+// import FoodSustainabilityProject from "./pages/projects/FoodSustainabilityProject";
 // const [mode, setMode] = useState("light-mode");
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Projects />,
       },
       {
         path: "projects/",
@@ -37,18 +37,18 @@ const router = createBrowserRouter([
         path: "lifespan-berdi-project/",
         element: <LifespanBerdiProject mode={"dark-mode"} />,
       },
-      {
-        path: "barder-project/",
-        element: <BarderProject mode={"dark-mode"} />,
-      },
+      // {
+      //   path: "barder-project/",
+      //   element: <BarderProject mode={"dark-mode"} />,
+      // },
       {
         path: "cbds-project/",
         element: <CbdsProject mode={"dark-mode"} />,
       },
-      {
-        path: "food-sustainability-project/",
-        element: <FoodSustainabilityProject mode={"dark-mode"} />,
-      },
+      // {
+      //   path: "food-sustainability-project/",
+      //   element: <FoodSustainabilityProject mode={"dark-mode"} />,
+      // },
       {
         path: "about/",
         element: <About />,
@@ -68,11 +68,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-function App() {
-  return (
-    <div className="App">
-      ...
-      <RouterProvider router={router} />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//       ...
+//       <RouterProvider router={router} />
+//     </div>
+//   );
+// }

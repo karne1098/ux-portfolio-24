@@ -77,14 +77,11 @@ import DevCodeMirrorUnstyled from "../../images/CbdsProject/dev-codemirror-unsty
 
 export default function CbdsProject(props) {
   return (
-    <main className="cbds-project">
+    <main className="project">
       <h1>Citizens Design System Learning Hub</h1>
       <h2>At a Glance</h2>
       <section className="at-a-glance">
-        <div
-          className="content-grid lowered-content--small"
-          id="at-a-glance-grid"
-        >
+        <div className="content-grid">
           <div className="content-row">
             <div className="content--6">
               <h3>Stakeholder</h3>

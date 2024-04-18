@@ -26,10 +26,10 @@ import "./LifespanBerdiProject.scss";
 
 export default function LifespanBerdiProject(props) {
   return (
-    <main className={props.mode}>
+    <main className="project">
       <h1>Lifespan BERDI Project</h1>
       <h2>At a Glance</h2>
-      <section>
+      <section className="at-a-glance">
         <div className="content-grid">
           <div className="content-row">
             <div className="content--6">
@@ -82,8 +82,11 @@ export default function LifespanBerdiProject(props) {
           </a>{" "}
           at Brown Universisty and Rhode Island School of Design, a student
           organization that focuses on connecting design students with work in
-          health domains. My role was pitched as a UX consultant to a website
-          redesign of the center for{" "}
+          health domains.{" "}
+        </p>
+        <p className="my-role-in-project">
+          My role was pitched as a UX consultant to a website redesign of the
+          center for{" "}
           <a
             href="https://www.lifespan.org/centers-services/biostatistics-epidemiology-research-design-and-informatics-berdi"
             target="_blank"
@@ -98,7 +101,7 @@ export default function LifespanBerdiProject(props) {
           </a>
           , a major health system within Rhode Island.{" "}
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--4">
               <img src={designxhealthHeader} alt="Design x Health header" />
@@ -117,11 +120,14 @@ export default function LifespanBerdiProject(props) {
         <p>
           At the time, I had only experienced working on UX projects through
           class, where the problem, constraints, solution requirements, and
-          tools were clearly provided. Early in the project, I realized that
-          this project would be <b>not idealistic</b>, and I adjusted to the
-          reality of an unclear problem space, constraints, and solution space.
+          tools were clearly provided.
         </p>
-        <div className="content-grid">
+        <p className="my-role-in-project">
+          Early in the project, I realized that this project would be{" "}
+          <b>not idealistic</b>, and I adjusted to the reality of an unclear
+          problem space, constraints, and solution space.
+        </p>
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--12">
               <img
@@ -144,9 +150,9 @@ export default function LifespanBerdiProject(props) {
           video), and a web team (components, site changes). I had multiple{" "}
           <b>conversations</b> and read key <b>documents</b> from these teams.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
-            <div className="content--12--min">
+            <div className="content--12">
               <img
                 src={lifespanConstraintsDesignCopy}
                 alt="three shared files regarding Lifespan's layout design guide, 
@@ -168,8 +174,8 @@ export default function LifespanBerdiProject(props) {
             User experience of scheduling depends on <b>Acuity Scheduling</b>,
             which must be used because of <b>security </b>considerations in a
             healthcare institution.
-            <div className="content-grid">
-              <div className="content-row">
+            <div className="content-grid lowered-content--small">
+              <div className="content-row padding-top--24px">
                 <div className="content--3">
                   <img src={drupal} alt="drupal logo" />
                 </div>
@@ -187,7 +193,7 @@ export default function LifespanBerdiProject(props) {
       </section>
       <section>
         <h3>Impact</h3>
-        <p>
+        <p className="my-role-in-project">
           These stylistic and technical restraints influenced me to{" "}
           <b>shift my focus</b> towards content, navigation, and accessibility,{" "}
           <b>areas of UX outside of visual design.</b>
@@ -202,9 +208,9 @@ export default function LifespanBerdiProject(props) {
           professionals associated with those groups. The deck also included the
           center's vision, strategy, tactics, and logistics.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
-            <div className="content--12--small">
+            <div className="content--12">
               <img
                 src={berdiOrgStructure}
                 alt="graph depicting the hierarchical relationship between BERDI groups"
@@ -219,13 +225,23 @@ export default function LifespanBerdiProject(props) {
           The documents overviewed corporate structure, so I was tempted to{" "}
           <b>contact each group</b> to understand the function of and
           relationship between them. However, the director and I anticipated
-          that would take <b>too long for the project timeline</b>, so I decided
-          to look at the existing website to gain as much information possible.
+          that would take <b>too long for the project timeline</b>.
         </p>
-        <img
-          src={berdiTimeline}
-          alt="hand holding am hourglass and people discussing scheduling in front of a calendar"
-        />
+        <p className="my-role-in-project">
+          {" "}
+          I decided to look at the existing website to gain as much information
+          possible.
+        </p>
+        <div className="content-grid lowered-content--small">
+          <div className="content-row">
+            <div className="content--12">
+              <img
+                src={berdiTimeline}
+                alt="hand holding am hourglass and people discussing scheduling in front of a calendar"
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <h2> Analyzing the Existing BERDI Website</h2>
       <section>
@@ -234,7 +250,7 @@ export default function LifespanBerdiProject(props) {
           marked places in the existing website that I felt needed more clarity
           or information.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--12">
               <img
@@ -262,10 +278,17 @@ export default function LifespanBerdiProject(props) {
           There's a wide and unknown range of demographics potentially using the
           site: residents, fellows, med students, researchers, and more...
         </p>
-        <img
-          src={berdiUsers}
-          alt="nurses, doctors, statisticians, and researchers"
-        />
+        <div className="content-grid lowered-content--small">
+          <div className="content-row">
+            <div className="content--12">
+              <img
+                src={berdiUsers}
+                alt="nurses, doctors, statisticians, and researchers"
+              />
+            </div>
+          </div>
+        </div>
+
         <p>
           Users have various goals and knowledge of how to achieve those goals.
           The director perceives the frequency of these user types according to
@@ -285,10 +308,16 @@ export default function LifespanBerdiProject(props) {
             landed at BERDI (common)
           </li>
         </ul>
-        <img
-          src={berdiDirectorsUsers}
-          alt="three types of users, as understood by BERDI director"
-        />
+        <div className="content-grid lowered-content--small">
+          <div className="content-row">
+            <div className="content--12">
+              <img
+                src={berdiDirectorsUsers}
+                alt="three types of users, as understood by BERDI director"
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <h3>No Access to Critical User Base</h3>
@@ -306,17 +335,25 @@ export default function LifespanBerdiProject(props) {
       </p>
       <section>
         <h3>The problem statement</h3>
-        <ol>
-          <li>
-            Develop distinct, concise, useful information on pages that the user
-            will interact with.
-          </li>
-          <li>Create logical navigation and organization of site pages.</li>
-          <li>
-            Establish framework for UX Research to resolve the critical issues
-            in 1. and 2.
-          </li>
-        </ol>
+        <div className="content-grid lowered-content--small">
+          <div className="content-row">
+            <div className="content--12">
+              <ol>
+                <li>
+                  Develop distinct, concise, useful information on pages that
+                  the user will interact with.
+                </li>
+                <li>
+                  Create logical navigation and organization of site pages.
+                </li>
+                <li>
+                  Establish framework for UX Research to resolve the critical
+                  issues in 1. and 2.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
       </section>
       <h2>1. Developing distinct, concise, useful content</h2>
       <section>
@@ -331,7 +368,7 @@ export default function LifespanBerdiProject(props) {
           src={berdiTimeline}
           alt="hand holding am hourglass and people discussing scheduling in front of a calendar"
         />
-        <p>
+        <p className="my-role-in-project">
           The director and I decided that the most feasible next step would be
           for me to send him a content request for any information I believed to
           be missing.
@@ -345,9 +382,9 @@ export default function LifespanBerdiProject(props) {
           Can We Help?, Schedule an Appointment, Levels of Service, Research
           Resources, and FAQ.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
-            <div className="content--12--min">
+            <div className="content--12">
               <img
                 src={berdiContentRequest}
                 alt="outline of content request document"
@@ -361,7 +398,7 @@ export default function LifespanBerdiProject(props) {
           of content. This consistency would allow the director and stakeholders
           to work through the document without confusion.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--3">
               <img
@@ -397,23 +434,23 @@ export default function LifespanBerdiProject(props) {
           groupings, hierarchies, and models they might have about the parts of
           the site.
         </p>
-        <p>
-          I recommend this as a feasible method because it is low commitment, no
-          cost, and BERDI has some access to users that successfully set
-          appointments.
+        <p className="my-role-in-project">
+          I recommend virtual card sorting as a feasible method because it is
+          low commitment, no cost, and BERDI has some access to users that
+          successfully set appointments.
         </p>
       </section>
       <section>
         <h3>Example Card Sort</h3>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
-            <div className="content--12--med">
+            <div className="content--12">
               <img
                 src={userResearchCardSortingCards}
                 alt="unsorted set of 15 distinct cards, uniformly spread, to be used for virtual card sorting"
               />
             </div>
-            <div className="content--12--med">
+            <div className="content--12">
               <img
                 src={userResearchCardSortingExample}
                 alt="15 distinct cards sorted, unevenly clustered, by User A in virtual card sorting"
@@ -433,7 +470,7 @@ export default function LifespanBerdiProject(props) {
           impact, process, logistics, potential participants, and justifications
           of use.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--3">
               <img
@@ -461,12 +498,14 @@ export default function LifespanBerdiProject(props) {
           Midway into the project, I realized that my role was as much a Project
           Manager as a UX consultant. This realization came when a new student
           member joined the project from Brown, and I was the one to create an
-          onboarding process for her. I created a “Project Summary” document
-          that included all the developments I'd made so far in the project
-          including Project Goals, Design/Technical Limitations, and Insights on
-          BERDI Site.
+          onboarding process for her.
         </p>
-        <div className="content-grid">
+        <p className="my-role-in-project">
+          I created a “Project Summary” document that included all the
+          developments I'd made so far in the project including Project Goals,
+          Design/Technical Limitations, and Insights on BERDI Site.
+        </p>
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--3">
               <img
@@ -493,7 +532,7 @@ export default function LifespanBerdiProject(props) {
           Design x Health team. I was scheduling meetings, taking meeting notes,
           and organizing documentation.
         </p>
-        <div className="content-grid">
+        <div className="content-grid lowered-content--small">
           <div className="content-row">
             <div className="content--5">
               <img
@@ -509,7 +548,7 @@ export default function LifespanBerdiProject(props) {
             </div>
           </div>
         </div>
-        <p>
+        <p className="my-role-in-project">
           This experience gave me a deep appreciation for work that Project
           Managers do! I gained some experience as a pseudo-PM, and I'd be
           interested in learning more, maybe someday…

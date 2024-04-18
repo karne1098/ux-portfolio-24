@@ -4,21 +4,21 @@ import "./root.scss";
 
 export default function Root() {
   return (
-    <div className="root-nav">
-      <nav>
-        <Link to={`/`} className="nav-link">
+    <div>
+      <nav className="root-nav">
+        {/* <Link to={`/`} className="nav-link">
           Home
+        </Link> */}
+
+        {/* <div className="nav-away-from-home"> */}
+        <Link to={`/projects`} className="nav-link">
+          Projects
         </Link>
 
-        <div className="nav-away-from-home">
-          <Link to={`/projects`} className="nav-link">
-            Projects
-          </Link>
-
-          <Link to={`/about`} className="nav-link">
-            About
-          </Link>
-        </div>
+        <Link to={`/about`} className="nav-link">
+          About
+        </Link>
+        {/* </div> */}
       </nav>
 
       <Outlet />
