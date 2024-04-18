@@ -10,12 +10,12 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import { useState } from "react";
 
-import Root from "./routes/root";
+import Root from "./src/routes/root";
 // import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import LifespanBerdiProject from "./pages/projects/LifespanBerdiProject";
-import CbdsProject from "./pages/projects/CbdsProject";
+import Projects from "./src/pages/Projects";
+import About from "./src/pages/About";
+import LifespanBerdiProject from "./src/pages/projects/LifespanBerdiProject";
+import CbdsProject from "./src/pages/projects/CbdsProject";
 // import BarderProject from "./pages/projects/BarderProject";
 // import FoodSustainabilityProject from "./pages/projects/FoodSustainabilityProject";
 // const [mode, setMode] = useState("light-mode");
